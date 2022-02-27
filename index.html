@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Weather App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="./src/assets/images/devchallenges-favicon.png" type="image/x-icon" />
+
+		<script src="https://kit.fontawesome.com/a644a7e046.js" crossorigin="anonymous"></script>
+	</head>
+
+	<!-- TODO make light and dark themes -->
+	<body>
+		<div id="app">
+			<div class="fixedContent">
+				<div class="menuContainer">
+					<button class="menu__button">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+
+				<article class="todayWeather">
+					<h1 class="todayWeather__city">Helsinki</h1>
+
+					<div class="todayWeather__imageContainer">
+						<img src="./src/assets/images/icons/Shower.webp" alt="weather status description image" class="todayWeather__image" />
+					</div>
+
+					<div class="todayWeather__info">
+						<p class="todayWeather__temperature">15<span class="todayWeather__temperature--unitType">ºC</span></p>
+						<p class="todayWeather__weatherStatus">Shower</p>
+						<p class="todayWeather__date">Today · Fri,5 Jun</p>
+					</div>
+
+					<div class="todayWeather__location">
+						<i class="fas fa-map-marker-alt"></i>
+						<p class="todayWeather__country">Finland</p>
+					</div>
+				</article>
+			</div>
+
+			<main class="pageContent">
+				<section class="weatherForecastContainer">
+					<h2>Forecast in the next 6 Days</h2>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Tomorrow</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/Sleet.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Sun, 7 Jun</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/Sleet.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Mon, 8 Jun</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/Thunderstorm.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Tue, 9 Jun</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/LightCloud.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Wed, 10 Jun</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/HeavyRain.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+
+					<div class="weatherForecast">
+						<h2 class="weatherForecast__date">Thu, 11 Jun</h2>
+						<div class="weatherForecast__imageContainer">
+							<img src="./src/assets/images/icons/Hail.webp" alt="weather status description image" class="weatherForecast__image" />
+						</div>
+						<div class="weatherForecast__temperature">
+							<p class="weatherForecast__temperature--max">16ºC</p>
+							<p class="weatherForecast__temperature--min">11ºC</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="weatherHighlights">
+					<h2 class="weatherHighlights__title">Today's HighLights</h2>
+
+					<div class="weatherHighlights__container">
+						<h3 class="weatherHighlights__subTitle">Wind status</h3>
+						<p class="weatherHighlights__info">7 mph</p>
+						<!--TODO icon with the direction of the wind -->
+					</div>
+
+					<div class="weatherHighlights__container">
+						<h3 class="weatherHighlights__subTitle">Humidity</h3>
+						<p class="weatherHighlights__info">84%</p>
+						<!--TODO Progres bar -->
+					</div>
+
+					<div class="weatherHighlights__container">
+						<h3 class="weatherHighlights__subTitle">Visibility</h3>
+						<p class="weatherHighlights__info">6,4 miles</p>
+					</div>
+
+					<div class="weatherHighlights__container">
+						<h3 class="weatherHighlights__subTitle">Air Pressure</h3>
+						<p class="weatherHighlights__info">998 mb</p>
+					</div>
+				</section>
+			</main>
+
+			<footer class="copyright">
+				<p class="copyright__author">create by <a href="#" class="copyright__link">username</a> - devchallenges.io</p>
+			</footer>
+		</div>
+	</body>
+</html>
