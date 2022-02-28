@@ -1,0 +1,40 @@
+.weatherForecast {
+	background-color: var(--bg-color-primary);
+
+	&__date {
+		margin: 0.6em 0;
+		font-size: 1.1rem;
+		text-align: center;
+		color: var(--text-color-light);
+	}
+
+	&__imageContainer {
+		width: 100%;
+		min-height: 130px;
+	}
+
+	&__image {
+		max-width: 70%;
+		// max-height: 70%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	&__temperature {
+		display: flex;
+		justify-content: space-evenly;
+
+		&--min,
+		&--max {
+			margin-top: 0;
+		}
+
+		&--min {
+			color: var(--text-color);
+		}
+
+		&--max {
+			color: var(--text-color-light);
+		}
+	}
+}

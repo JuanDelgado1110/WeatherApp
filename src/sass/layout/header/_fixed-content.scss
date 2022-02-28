@@ -1,0 +1,6 @@
+.fixedContent {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 10% 1fr;
+	background-color: var(--bg-color-primary);
+}

@@ -1,0 +1,12 @@
+.menuContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 1.5em;
+
+	&__button {
+		padding: 0.5em 1em;
+		font-size: 1rem;
+		background-color: var(--color-buttonsBg-primary);
+		color: var(--text-color-light);
+	}
+}
