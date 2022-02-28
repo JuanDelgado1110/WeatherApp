@@ -1,0 +1,247 @@
+:root {
+  --bg-color-primary: #1e213a;
+  --bg-color-secundary: #100e1d;
+  --color-progressBar: #ffec65;
+  --color-buttonsBg-primary: #6e707a;
+  --color-buttonsbg-secudary: #3c47e9;
+  --text-color: #a09fb1;
+  --text-color-light: #e7e7eb;
+  --text-color-dark: #88869d;
+  --body-fontFamily: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--body-fontFamily);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.button {
+  border: none;
+  outline: none;
+}
+
+.button--circle {
+  border-radius: 100%;
+}
+
+.todayWeather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.todayWeather__imageContainer {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.todayWeather__image {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todayWeather__info {
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.todayWeather__temperature {
+  margin: 0;
+  font-size: 7rem;
+  line-height: 0.75em;
+  color: var(--text-color-light);
+}
+
+.todayWeather__temperature--unitType {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.todayWeather__weatherStatus {
+  margin: 0.5em 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.todayWeather__date {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+.todayWeather__location {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.todayWeather__locationIcon {
+  margin: 0 0.5em;
+  font-size: 1.2rem;
+  color: #1a9af0;
+}
+
+.todayWeather__city {
+  display: inline;
+  font-size: 1rem;
+  color: var(--text-color-light);
+}
+
+.todayWeather__country {
+  display: inline;
+  color: var(--text-color);
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+}
+
+.menuContainer__button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: var(--color-buttonsBg-primary);
+  color: var(--text-color-light);
+}
+
+.fixedContent {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  background-color: var(--bg-color-primary);
+}
+
+.pageContent {
+  padding: 2em;
+  background-color: var(--bg-color-secundary);
+}
+
+.weatherForecastContainer {
+  margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.weatherForecastContainer__title {
+  margin: 0;
+  grid-column: 1 / 3;
+  color: var(--text-color-light);
+}
+
+.weatherForecast {
+  background-color: var(--bg-color-primary);
+}
+
+.weatherForecast__date {
+  margin: 0.6em 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--text-color-light);
+}
+
+.weatherForecast__imageContainer {
+  width: 100%;
+  min-height: 130px;
+}
+
+.weatherForecast__image {
+  max-width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.weatherForecast__temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weatherForecast__temperature--min, .weatherForecast__temperature--max {
+  margin-top: 0;
+}
+
+.weatherForecast__temperature--min {
+  color: var(--text-color);
+}
+
+.weatherForecast__temperature--max {
+  color: var(--text-color-light);
+}
+
+.weatherHighlights {
+  display: grid;
+  gap: 20px;
+}
+
+.weatherHighlights__title {
+  margin: 0;
+  color: var(--text-color-light);
+}
+
+.weatherHighlights__container {
+  text-align: center;
+  background-color: var(--bg-color-primary);
+}
+
+.weatherHighlights__subTitle {
+  font-weight: 500;
+  color: var(--text-color-light);
+}
+
+.weatherHighlights__statistic {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 0.8em;
+  color: var(--text-color-light);
+}
+
+.weatherHighlights__statistic--unitType {
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.copyright {
+  text-align: center;
+  background-color: var(--bg-color-secundary);
+}
+
+.copyright__author {
+  margin: 0;
+  color: var(--text-color-light);
+}
+
+.copyright__link {
+  color: var(--color-progressBar);
+}

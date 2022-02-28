@@ -1,0 +1,34 @@
+.weatherHighlights {
+	display: grid;
+	gap: 20px;
+
+	&__title {
+		margin: 0;
+		color: var(--text-color-light);
+	}
+
+	&__container {
+		text-align: center;
+		background-color: var(--bg-color-primary);
+	}
+
+	&__subTitle {
+		font-weight: 500;
+		color: var(--text-color-light);
+	}
+
+	&__statistic {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 0.8em;
+		color: var(--text-color-light);
+
+		&--unitType {
+			font-weight: 500;
+			font-size: 1.5rem;
+			display: inline-block;
+		}
+	}
+}

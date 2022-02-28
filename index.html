@@ -5,24 +5,28 @@
 		<title>Weather App</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="shortcut icon" href="./src/assets/images/devchallenges-favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/x-icon" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
 
 		<script src="https://kit.fontawesome.com/a644a7e046.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="./src/css/styles.css" />
 	</head>
 
 	<!-- TODO make light and dark themes -->
 	<body>
-		<div id="app">
+		<div id="root">
 			<div class="fixedContent">
 				<div class="menuContainer">
-					<button class="menu__button">
-						<i class="fas fa-bars"></i>
-					</button>
+					<button class="button menuContainer__button">Settings</button>
+
+					<button class="button button--circle menuContainer__button"><i class="far fa-moon"></i></button>
 				</div>
 
 				<article class="todayWeather">
-					<h1 class="todayWeather__city">Helsinki</h1>
-
 					<div class="todayWeather__imageContainer">
 						<img src="./src/assets/images/icons/Shower.webp" alt="weather status description image" class="todayWeather__image" />
 					</div>
@@ -30,11 +34,15 @@
 					<div class="todayWeather__info">
 						<p class="todayWeather__temperature">15<span class="todayWeather__temperature--unitType">ºC</span></p>
 						<p class="todayWeather__weatherStatus">Shower</p>
-						<p class="todayWeather__date">Today · Fri,5 Jun</p>
+						<p class="todayWeather__date">
+							<span class="todayWeather__date--day">Today </span> -
+							<span class="todayWeather__date--fullDate">Fri, 5 Jun</span>
+						</p>
 					</div>
 
 					<div class="todayWeather__location">
-						<i class="fas fa-map-marker-alt"></i>
+						<h1 class="todayWeather__city">Helsinki</h1>
+						<i class="fas fa-map-marker-alt todayWeather__locationIcon"></i>
 						<p class="todayWeather__country">Finland</p>
 					</div>
 				</article>
@@ -42,7 +50,7 @@
 
 			<main class="pageContent">
 				<section class="weatherForecastContainer">
-					<h2>Forecast in the next 6 Days</h2>
+					<h2 class="weatherForecastContainer__title">Weekly Forecast</h2>
 
 					<div class="weatherForecast">
 						<h2 class="weatherForecast__date">Tomorrow</h2>
@@ -116,29 +124,30 @@
 
 					<div class="weatherHighlights__container">
 						<h3 class="weatherHighlights__subTitle">Wind status</h3>
-						<p class="weatherHighlights__info">7 mph</p>
+						<p class="weatherHighlights__statistic">7<span class="weatherHighlights__statistic--unitType">mph</span></p>
 						<!--TODO icon with the direction of the wind -->
 					</div>
 
 					<div class="weatherHighlights__container">
 						<h3 class="weatherHighlights__subTitle">Humidity</h3>
-						<p class="weatherHighlights__info">84%</p>
+						<p class="weatherHighlights__statistic">84<span class="weatherHighlights__statistic--unitType">%</span></p>
 						<!--TODO Progres bar -->
 					</div>
 
 					<div class="weatherHighlights__container">
 						<h3 class="weatherHighlights__subTitle">Visibility</h3>
-						<p class="weatherHighlights__info">6,4 miles</p>
+						<p class="weatherHighlights__statistic">6,4 <span class="weatherHighlights__statistic--unitType">miles</span></p>
 					</div>
 
 					<div class="weatherHighlights__container">
 						<h3 class="weatherHighlights__subTitle">Air Pressure</h3>
-						<p class="weatherHighlights__info">998 mb</p>
+						<p class="weatherHighlights__statistic">998 <span class="weatherHighlights__statistic--unitType">mb</span></p>
 					</div>
 				</section>
 			</main>
 
 			<footer class="copyright">
+				<!-- TODO in a tag put github link -->
 				<p class="copyright__author">create by <a href="#" class="copyright__link">username</a> - devchallenges.io</p>
 			</footer>
 		</div>

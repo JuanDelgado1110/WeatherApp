@@ -1,0 +1,13 @@
+.copyright {
+	text-align: center;
+	background-color: var(--bg-color-secundary);
+
+	&__author {
+		margin: 0;
+		color: var(--text-color-light);
+	}
+
+	&__link {
+		color: var(--color-progressBar);
+	}
+}
